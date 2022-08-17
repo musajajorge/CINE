@@ -54,7 +54,9 @@ df <- data.frame(c("Administración de Negocios Internacionales",
 
 colnames(df) <- "ProgramaEducativo"
 
-cine(df=df, EducationProgram="ProgramaEducativo", filterBy='PRF')
+df <- cine(df=df, EducationProgram="ProgramaEducativo", filterBy='PRF')
+
+print(df)
 ```
 
 ### Importing a dataframe
