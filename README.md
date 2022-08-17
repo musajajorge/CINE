@@ -14,7 +14,7 @@
 
 <!-- badges: end -->
 
-[**CINE**](https://github.com/musajajorge/cine/) 
+[**CINE**](https://github.com/musajajorge/cine/) is a package that uses the lemmatization of educational terms to classify educational programs according to the CINE classification published by INEI.
 
 ## Installation :arrow_double_down:
 
