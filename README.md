@@ -61,8 +61,9 @@ print(df)
 
 ### Importing a dataframe
 
-``` r
+For this example, the list of professional level educational programs published by SUNEDU in TUNI has been used.  
 
+``` r
 library(readxl)
 url <- "https://github.com/musajajorge/CINE/raw/main/imgs/SUNEDU.xlsx"
 destfile <- "SUNEDU.xlsx"
@@ -72,10 +73,15 @@ df <- read_excel(destfile)
 colnames(df)
 
 df <- cine(df=df, EducationProgram="PROGRAMA_NOMBRE", filterBy='PRF')
+```
 
+The result can be exported with:  
+
+``` r
 library(openxlsx)
 write.xlsx(df, "exportar.xlsx")
 ```
+
 
 ------------
 
