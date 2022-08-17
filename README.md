@@ -16,6 +16,53 @@
 
 [**CINE**](https://github.com/musajajorge/cine/) 
 
+## Installation :arrow_double_down:
+
+Install **CINE** from [**CRAN**](https://CRAN.R-project.org/package=CINE):
+
+``` r
+install.packages("CINE")
+```
+
+or install **CINE** with
+
+``` r
+library(remotes)
+install_github("musajajorge/CINE")
+```
+
+## Usage :muscle:
+
+### Creating a dataframe
+
+``` r
+df <- data.frame(c("Administración de Negocios Internacionales",
+"Ingeniería de Telecomunicaciones",
+"Ingeniería Geográfica",
+"Psicología Organizacional y de la Gestión Humana",
+"Educación Secundaria Especialidad Lengua y Literatura",
+"Educación Secundaria, Mención en: Ciencias Matemáticas",
+"Ciencias de la Comunicación con Especialidad en Periodismo",
+"Ingeniería Pesquera",
+"Medicina Humana",
+"Medicina Veterinaria",
+"Carrera de Economía",
+"Radiología",
+"Biología - Microbiología",
+"Marketing y Negocios Internacionales",
+"Tecnología Médica con Especialidad en Laboratorio Clínico"))
+
+colnames(df) <- "ProgramaEducativo"
+
+cine(df=df, EducationProgram="ProgramaEducativo", filterBy='PRF')
+```
+
+### Importing a dataframe
+
+``` r
+
+```
+
 ------------
 
 <p align="center">
