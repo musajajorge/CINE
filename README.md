@@ -63,6 +63,18 @@ print(df)
 
 ``` r
 
+library(readxl)
+url <- "https://github.com/musajajorge/CINE/raw/main/imgs/SUNEDU.xlsx"
+destfile <- "SUNEDU.xlsx"
+curl::curl_download(url, destfile)
+df <- read_excel(destfile)
+
+colnames(df)
+
+df <- cine(df=df, EducationProgram="PROGRAMA_NOMBRE", filterBy='PRF')
+
+library(openxlsx)
+write.xlsx(df, "exportar.xlsx")
 ```
 
 ------------
