@@ -70,8 +70,6 @@ destfile <- "SUNEDU.xlsx"
 curl::curl_download(url, destfile)
 df <- read_excel(destfile)
 
-colnames(df)
-
 df <- cine(df=df, EducationProgram="PROGRAMA_NOMBRE", filterBy='PRF')
 ```
 
